@@ -2,50 +2,52 @@
 <html lang="en">
 
 <head>
-  <!-- Set character encoding -->
+  <!-- Character Encoding -->
   <meta charset="UTF-8" />
-  <!-- Responsive design: set the viewport -->
+  <!-- Responsive viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO: Page Title -->
-  <title> </title>
+  <title>Quds News – Independent Jerusalem News &amp; Analysis</title>
 
   <!-- SEO: Meta Description -->
-  <meta name="description" content="" />
+  <meta name="description"
+    content="Quds News is an independent media platform delivering accurate, in-depth coverage and objective analysis of political, social, and cultural developments in Jerusalem." />
 
   <!-- SEO: Meta Keywords -->
-  <meta name="keywords" content="" />
+  <meta name="keywords"
+    content="Jerusalem news, Quds News, Palestinian cause, Middle East news, Jerusalem politics, Jerusalem culture" />
 
-  <!-- SEO: Allow search engines to index and follow links -->
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://qudsnews.com/" />
+
+  <!-- SEO: Robots -->
   <meta name="robots" content="index, follow" />
 
+  <!-- Author and Theme Color -->
+  <meta name="author" content="Quds News" />
+  <meta name="theme-color" content="#1565C0" />
 
-
-  <!-- Additional Meta Tags -->
-  <meta name="author" content="المهاجر" />
-  <meta name="theme-color" content="" />
-
-  <!-- SEO: Open Graph additional tags for social sharing -->
-  <meta property="og:site_name" content="المهاجر" />
-  <!-- Optional: Specify your Twitter handle if available -->
-  <meta name="twitter:site" content="@YourTwitterHandle" />
-
-  <!-- Optimization: Preconnect to external domains for faster resource loading -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="img/og-image.png" />
-  <meta property="og:url" content="https://elmohajernews.com" />
+  <!-- Open Graph Tags for social sharing -->
+  <meta property="og:site_name" content="Quds News" />
+  <meta property="og:title" content="Quds News – Independent Jerusalem News &amp; Analysis" />
+  <meta property="og:description"
+    content="Discover reliable, unbiased news and deep insights on Jerusalem from Quds News—your premier source for understanding the Palestinian cause and city developments." />
+  <meta property="og:url" content="https://qudsnews.com/" />
+  <meta property="og:image" content="https://qudsnews.com/assets/img/og-image.jpg" />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:locale" content="en_US" />
 
-  <!-- Twitter Card Meta Tags -->
+  <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="img/twitter-image.png" />
+  <meta name="twitter:site" content="@QudsNews" />
+  <meta name="twitter:title" content="Quds News – Independent Jerusalem News &amp; Analysis" />
+  <meta name="twitter:description"
+    content="Accurate, in-depth coverage and objective analysis of events and culture in Jerusalem—by Quds News." />
+  <meta name="twitter:image" content="https://qudsnews.com/assets/img/twitter-image.jpg" />
+
+  <!-- Preconnect to speed up resource loading -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
@@ -62,15 +64,655 @@
   <link rel="preload" href="assets/css/style.css" as="style" />
   <link rel="preload" href="assets/js/script.js" as="script" />
 
-
+  <!-- JSON-LD Structured Data for Organization & Website -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+          "@type": "Organization",
+          "name": "Quds News",
+          "url": "https://qudsnews.com/",
+          "logo": "https://qudsnews.com/assets/img/logo.png",
+          "sameAs": [
+            "https://twitter.com/QudsNews",
+            "https://www.facebook.com/QudsNews"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://qudsnews.com/",
+          "name": "Quds News",
+          "publisher": {
+            "@id": "https://qudsnews.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://qudsnews.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>
   <div id="preloadr">
-
+    <div class="loader"></div>
   </div>
 
+  <!-- Hero Section with Slider -->
+  <section id="hero-section">
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm ">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.svg" alt="Quds News Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Quds</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Opinion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">The Palestine Lexicon</a></li>
+          </ul>
+          <form class="d-flex ms-3">
+            <button type="submit" class="btn btn-search">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
 
+        </div>
+      </nav>
+    </div>
+
+    <!-- Slider Container -->
+    <div class="container ">
+      <div class="hero-slider owl-carousel">
+        <!-- Example Slide Item -->
+        <div class="slide-item" data-bg="/assets/img//articles/Horizontal/1.jpg">
+          <div class="text">
+            <h2 class="slide-title">Gaza Faces Deepening Humanitarian Crisis</h2>
+            <p class="slide-desc">Israel Blocks Crossings for 13th Day – 90% Without Water</p>
+          </div>
+          <hr>
+          <div class="slide-meta">
+            <a class="author">Ahmed Mohammed</a> &bull; <a class="date">Sep 4, 2022</a>
+          </div>
+        </div>
+        <!-- Duplicate similar slide-items for news2, news3, news4 -->
+        <div class="slide-item" data-bg="/assets/img//articles/Horizontal/2.jpg">
+          <div class="text">
+            <h2 class="slide-title">Gaza Faces Deepening Humanitarian Crisis 2</h2>
+            <p class="slide-desc">Israel Blocks Crossings for 13th Day – 90% Without Water</p>
+          </div>
+
+          <hr>
+          <div class="slide-meta">
+            <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+          </div>
+        </div>
+        <div class="slide-item" data-bg="/assets/img//articles/Horizontal/3.jpg">
+          <div class="text">
+
+            <h2 class="slide-title">Gaza Faces Deepening Humanitarian Crisis 3</h2>
+            <p class="slide-desc">Israel Blocks Crossings for 13th Day – 90% Without Water</p>
+          </div>
+
+          <hr>
+          <div class="slide-meta">
+            <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Nov 12, 2022</a>
+          </div>
+        </div>
+        <div class="slide-item" data-bg="/assets/img//articles/Horizontal/4.jpg">
+          <div class="text">
+            <h2 class="slide-title">Gaza Faces Deepening Humanitarian Crisis 4</h2>
+            <p class="slide-desc">Israel Blocks Crossings for 13th Day – 90% Without Water</p>
+          </div>
+
+          <hr>
+          <div class="slide-meta">
+            <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Dec 20, 2022</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Just In Section -->
+  <section class="just-in-section py-5">
+    <div class="container">
+      <!-- Title, Subtitle & Button -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="mb-0">Just In</h2>
+          <small class="text-muted">Exploring News, Culture, And Stories</small>
+        </div>
+        <a href="#" class="btn btn-outline-primary">
+          View All <i class="fas fa-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <!-- Content Columns -->
+      <div class="row gy-4 align-items-stretch">
+        <!-- Featured Article -->
+        <div class="col-lg-4">
+          <div class="card text-white border-0 h-100">
+            <img src="assets/img/articles/Square/2.jpg" class="card-img" alt="Featured News">
+            <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+              style="background: rgba(0,0,0,0.3);">
+              <span class="badge  mb-2 cat_culture ">Culture</span>
+              <h5 class="card-title">
+                <a href="#">
+                  Humanity means nothing to Israeli govt.” Priyanka Gandhi condemns Israel’s deadly
+                  attacks on Gaza
+                </a>
+              </h5>
+              <div class="text-white small">Sep 4, 2022</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List Column 1 -->
+        <div class="col-lg-4">
+          <div class="d-flex flex-column h-100">
+            <div class="mb-4">
+              <span class="badge cat_news">News</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Gaza Faces Deepening Humanitarian Crisis as Israel Blocks Crossings
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="badge cat_opinion">Opinion</span>
+              <h6 class="mt-2">
+                <a href="#">Analysis: The Geopolitical Implications of the Gaza Blockade</a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div>
+              <span class="badge cat_features">Features</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Inside Stories: Living Under the Shadow of Conflict
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List Column 2 -->
+        <div class="col-lg-4">
+          <div class="d-flex flex-column h-100">
+            <div class="mb-4">
+              <span class="badge cat_news">News</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  UN Calls for Immediate Humanitarian Corridor into Gaza
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="badge cat_opinion">Opinion</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Expert View: Negotiating Peace Amid Hostilities
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div>
+              <span class="badge cat_features">Features</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Cultural Spotlight: Preserving Heritage in Turbulent Times
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Slider Section -->
+  <section id="news-slider-section" class="news-slider-section">
+    <div class="container">
+      <!-- Header: Title / Subtitle / Button on one line -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="mb-0">News</h2>
+          <small class="text-muted">Exploring News, Culture, And Stories</small>
+        </div>
+        <a href="#" class="btn btn-primary">
+          View All <i class="fas fa-arrow-right ms-1"></i>
+        </a>
+      </div>
+
+      <!-- Owl Carousel -->
+      <div class="news-slider owl-carousel owl-theme">
+        <!-- Slide Item -->
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/1.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/2.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/3.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/4.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/5.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 ">
+            <img src="assets/img/articles/Square/6.jpg" class="card-img-top" alt="News image">
+            <div class="card-body">
+              <span class="badge cat_news mb-2">News</span>
+              <h5 class="card-title">Israel’s Gallant Admits They Knew About the Bibas Family’s Death</h5>
+            </div>
+            <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer: Range + Nav Buttons -->
+      <div class="news-slider-footer d-flex justify-content-between align-items-center mt-3">
+        <div class="slider-range small fw-bold">1 - 6</div>
+        <div class="slider-controls">
+          <button class="btn btn-light btn-sm me-2 prev"><i class="fas fa-arrow-left"></i></button>
+          <button class="btn btn-light btn-sm next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Stories Section -->
+  <section id="video-stories">
+    <div class="container">
+      <!-- Header -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="mb-0">Video Stories</h2>
+          <small class="text-muted">Discover The Latest And Most Engaging Videos</small>
+        </div>
+        <a href="#" class="btn btn-outline-primary">View All <i class="fas fa-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Video Player Column -->
+        <div class="col-lg-8">
+          <div class="video-player position-relative" data-video-id="VIDEO_ID_OR_URL" data-video-type="youtube">
+            <img src="assets/img/articles/Square/5.jpg" alt="Video thumbnail" class="img-fluid rounded">
+            <div class="play-overlay">
+              <i class="fas fa-play fa-4x"></i>
+            </div>
+          </div>
+          <span class="badge cat_opinion mb-1 mt-3">Opinion</span>
+
+          <h5 class="">New Testimonies Reveal Israeli Forces’ Use of Civilians as Human Shields During Gaza Assault
+          </h5>
+          <p class="text-secondary mb-1">Gaza (Quds News Network)– The Israeli Military Police is reportedly
+            investigating
+            six cases in which Israeli soldiers used Palestinian civilians…</p>
+          <div class="slide-meta text-muted">
+            <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+          </div>
+        </div>
+
+        <!-- Video Links Column -->
+        <div class="col-lg-4">
+          <ul class="list-unstyled video-list">
+            <li class="mb-4">
+              <span class="badge cat_news mb-1">News</span>
+              <a href="#" class="d-block video-link  mb-1" data-video-id="ANOTHER_VIDEO_ID"
+                data-video-type="youtube">Hamas
+                Agrees to Release Last Living American Captive</a>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </li>
+            <li class="mb-4">
+              <span class="badge cat_features  mb-1">Features</span>
+              <a href="#" class="d-block video-link mb-1" data-video-id="/assets/videos/local-video.mp4"
+                data-video-type="local">Inside Gaza’s Underground Hospitals</a>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </li>
+            <li class="mb-4">
+              <span class="badge cat_opinion mb-1">Opinion</span>
+              <a href="#" class="d-block video-link mb-1" data-video-id="YET_ANOTHER_ID"
+                data-video-type="youtube">Analysis:
+                The Humanitarian Corridor Debate</a>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </li>
+            <li class="mb-4">
+              <span class="badge cat_opinion mb-1">Opinion</span>
+              <a href="#" class="d-block video-link mb-1" data-video-id="YET_ANOTHER_ID"
+                data-video-type="youtube">Analysis:
+                The Humanitarian Corridor Debate</a>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Most Read Section -->
+  <section id="most-read">
+    <div class="container">
+      <!-- Header: Title / Subtitle / Button -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h2 class="mb-0">Most Read</h2>
+          <small class="text-muted">Fresh Perspectives On Current Events.</small>
+        </div>
+        <a href="#" class="btn btn-primary">View All <i class="fas fa-arrow-right ms-1"></i></a>
+      </div>
+
+      <div class="row g-lg-4">
+        <!-- Featured Large Card -->
+        <div class="col-lg-6">
+
+          <div class="row g-lg-4">
+            <div class="col-md-12">
+              <div class="position-relative overflow-hidden rounded">
+                <img src="assets/img/articles/Square/2.jpg" alt="Featured story" class="img-fluid featured-large">
+                <div class="most-read-overlay card border-0 shadow-lg">
+                  <div class="card-body">
+
+                    <span class="badge cat_news mb-1">News</span>
+
+                    <h5 class="card-title">Yale University Suspends Scholar After AI Article Accuses</h5>
+                    <div class="slide-meta text-muted">
+                      <a href="#" class="author">Author Name</a> &bull; <a href="#" class="date">Oct 1, 2022</a>
+                    </div>
+                    <hr>
+                    <p class="card-text text-secondary">Yale University Suspends Scholar After AI Article Accuses Her of
+                      Terrorism Over Pro-Palestine Activism.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card text-white border-0 h-100">
+                <img src="assets/img/articles/Square/2.jpg" class="card-img" alt="Featured News">
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: rgba(0,0,0,0.3);">
+                  <span class="badge  mb-2 cat_culture ">Culture</span>
+                  <h5 class="card-title">
+                    <a href="#">
+                      Israel’s Gallant Admits They Knew About the Bibas Family’s Death
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card text-white border-0 h-100">
+                <img src="assets/img/articles/Square/2.jpg" class="card-img" alt="Featured News">
+                <div class="card-img-overlay d-flex flex-column justify-content-end p-3"
+                  style="background: rgba(0,0,0,0.3);">
+                  <span class="badge  mb-2 cat_culture ">Culture</span>
+                  <h5 class="card-title">
+                    <a href="#">
+                      Israel’s Gallant Admits They Knew About the Bibas Family’s Death
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small Grid Cards -->
+        <div class="col-lg-3">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card h-100 border-0  rounded">
+                <img src="assets/img/articles/Square/3.jpg" class="card-img-top rounded" alt="Story 1">
+                <div class="card-body pt-2 p-0">
+                  <span class="badge cat_news mb-1">News</span>
+                  <h6 class="card-title mb-0">Israel’s Gallant Admits They Knew …</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100 border-0  rounded">
+                <img src="assets/img/articles/Square/4.jpg" class="card-img-top rounded" alt="Story 2">
+                <div class="card-body pt-2 p-0">
+                  <span class="badge cat_opinion mb-1">Opinion</span>
+                  <h6 class="card-title mb-0">Analysis: Geopolitical Implications …</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="card h-100 border-0  rounded">
+                <img src="assets/img/articles/Square/4.jpg" class="card-img-top rounded" alt="Story 2">
+                <div class="card-body pt-2 p-0">
+                  <span class="badge cat_opinion mb-1">Opinion</span>
+                  <h6 class="card-title mb-0">Analysis: Geopolitical Implications …</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- List Column -->
+        <div class="col-lg-3">
+          <div class="d-flex flex-column h-100">
+            <div class="mb-4">
+              <span class="badge cat_news">News</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  UN Calls for Immediate Humanitarian Corridor into Gaza
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="badge cat_opinion">Opinion</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Expert View: Negotiating Peace Amid Hostilities
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="badge cat_news">News</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  UN Calls for Immediate Humanitarian Corridor into Gaza
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <span class="badge cat_news">News</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  UN Calls for Immediate Humanitarian Corridor into Gaza
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div class="mb-4">
+              <span class="badge cat_opinion">Opinion</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Expert View: Negotiating Peace Amid Hostilities
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+            <div>
+              <span class="badge cat_features">Features</span>
+              <h6 class="mt-2">
+                <a href="#">
+                  Cultural Spotlight: Preserving Heritage in Turbulent Times
+                </a>
+              </h6>
+              <div class="slide-meta text-muted">
+                <a href="#" class="author">Author Name</a> • <a href="#" class="date">Oct 1, 2022</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer ">
+    <div class="container">
+      <div class="row text-white gy-4">
+        <!-- About Column -->
+        <div class="col-md-4">
+          <a href="#" class="d-inline-block mb-3">
+            <img src="assets/img/logo-white.svg" alt="Quds News Logo" height="40">
+          </a>
+          <p class="footer-text">We are an independent news platform specializing in covering Jerusalem, with all its
+            issues, concerns, and vibrant history.</p>
+        </div>
+        <!-- Explore Column -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Quds</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact Column -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Contact Us</h5>
+          <p class="footer-text">Always stay up to date with our latest news.</p>
+          <form class="d-flex mb-3" action="#" method="post">
+            <input type="email" class="form-control form-control-sm me-2" placeholder="Enter your email">
+            <button type="submit" class="btn btn-sm btn-primary">
+              Send <i class="fas fa-paper-plane ms-1"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center text-white mt-4 pt-3 border-top">
+        <small>© 2025 Quds. Designed by Takteck Company. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 
   <!-- JavaScript Files -->
   <script src="assets/js/jquery-3.7.1.min.js"></script>

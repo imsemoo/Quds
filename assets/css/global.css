@@ -1,23 +1,35 @@
 :root {
   /* Brand Colors */
-  --color-primary: #3AB4FF;
-  --color-primary-hover: #005F99;
-  --color-accent: #C7EEFF;
+  --color-primary: #1565C0;
+  /* Strong deep blue */
+  --color-primary-hover: #0D47A1;
+  /* Darker blue for hover states */
+  --color-accent: #FFB300;
+  /* Warm accent (amber), balances blue */
 
   /* Neutrals */
-  --color-surface: #FAFAFA;
+  --color-surface: #F5F7FA;
+  /* Light grey-blue for subtle backgrounds */
   --color-content-bg: #FFFFFF;
-  --color-border: #EAEAEA;
-  --color-dark: #1D242B;
-  --color-muted: #777777;
+  /* Clean background for content */
+  --color-border: #DDE2E6;
+  /* Softer grey border */
+  --color-dark: #1C1F26;
+  /* Nearly black for strong contrast */
+  --color-muted: #6B7280;
+  /* Muted text for less important info */
 
   /* States */
-  --color-success: #28a745;
-  --color-danger: #FF4C4C;
+  --color-success: #2E7D32;
+  /* Calmer green tone for success */
+  --color-danger: #D32F2F;
+  /* Balanced red tone for alerts */
 
   /* Typography */
   --text-primary: #212121;
+  /* Main text color */
   --text-secondary: var(--color-muted);
+  /* Subtext color */
 
   /* Spacing scale */
   --space-xxs: 4px;
@@ -27,18 +39,13 @@
   --space-lg: 32px;
   --space-xl: 64px;
 
-  /* Fluid spacing: pick the smaller value between fixed px and % of viewport */
-
-  /* Fluid small gap: min(16px, 4%) */
+  /* Fluid spacing */
   --space-fluid-sm: min(var(--space-sm), 4%);
-  /* Fluid medium gap: min(24px, 6%) */
   --space-fluid-md: min(var(--space-md), 6%);
-  /* Fluid large gap: min(32px, 8%) */
   --space-fluid-lg: min(var(--space-lg), 8%);
 
-  /* Fluid container padding: min(5em, 8% of width) */
+  /* Container padding */
   --container-padding-horizontal: min(2em, 8%);
-  /* مثال على padding عمودي أقل */
   --container-padding-vertical: min(2em, 5%);
 
   /* Border Radius */
@@ -47,15 +54,16 @@
   --radius-lg: 16px;
   --radius-xl: 32px;
 
-  /* Fluid Font Sizes using clamp(min, preferred, max) */
-  --font-xs: clamp(0.75rem, calc(0.75rem + 0.5vw), 0.875rem);
-  --font-sm: clamp(0.875rem, calc(0.875rem + 0.75vw), 1rem);
-  --font-md: clamp(1rem, calc(1rem + 1vw), 1.25rem);
-  --font-lg: clamp(1.25rem, calc(1.25rem + 1.5vw), 1.5rem);
-  --font-xl: clamp(1.5rem, calc(1.5rem + 2vw), 2rem);
-  --font-xxl: clamp(2rem, calc(2rem + 3vw), 3rem);
-  --font-display: clamp(3rem, calc(3rem + 4vw), 5rem);
+  /* Fluid Font Sizes */
+  --font-xs: clamp(0.75rem, 0.6rem + 0.5vw, 0.875rem);
+  --font-sm: clamp(0.875rem, 0.7rem + 0.75vw, 1rem);
+  --font-md: clamp(1rem, 0.9rem + 1vw, 1.25rem);
+  --font-lg: clamp(1.25rem, 1.1rem + 1.5vw, 1.5rem);
+  --font-xl: clamp(1.5rem, 1.3rem + 2vw, 2rem);
+  --font-xxl: clamp(2rem, 1.5rem + 3vw, 3rem);
+  --font-display: clamp(3rem, 2rem + 4vw, 5rem);
 }
+
 
 /* Reset */
 * {
@@ -66,35 +74,41 @@
 
 /* Fonts */
 @font-face {
-  font-family: "Almarai-Light";
-  src: url(../fonts/Almarai-Light.ttf);
+  font-family: "Montserrat-Light";
+  src: url(../fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
-  font-family: "Almarai-Regular";
-  src: url(../fonts/Almarai-Regular.ttf);
-}
-
-
-
-@font-face {
-  font-family: "Almarai-Bold";
-  src: url(../fonts/Almarai-Bold.ttf);
+  font-family: "Montserrat-Medium";
+  src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 @font-face {
-  font-family: "Almarai-ExtraBold";
-  src: url(../fonts/Almarai-ExtraBold.ttf);
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Barada";
-  src: url(../fonts/barada-reqa.ttf);
+  font-family: "Montserrat-SemiBold";
+  src: url(../fonts/Montserrat-SemiBold.ttf);
 }
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-ExtraBold";
+  src: url(../fonts/Montserrat-ExtraBold.ttf);
+}
+
+
+
 
 /* Base Styles */
 body {
-  font-family: "Almarai-Regular", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   font-size: var(--font-md);
   color: var(--text-primary);
 
@@ -106,9 +120,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Almarai-Bold";
+  font-family: "Montserrat-SemiBold";
   margin: 0;
-  line-height: 140%;
+  line-height: 150%;
 }
 
 h1 {
@@ -150,6 +164,10 @@ a:hover {
   color: var(--color-primary);
 }
 
+.badge {
+  width: max-content;
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -157,7 +175,7 @@ a:hover {
   justify-content: center;
   gap: var(--space-xs);
   padding: var(--space-xs) var(--space-md);
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -198,7 +216,7 @@ a:hover {
 }
 
 input::placeholder {
-  text-align: right;
+  text-align: start;
   font-size: var(--font-sm);
 }
 
@@ -220,4 +238,25 @@ ul {
 
 .bg-primary {
   background: var(--color-primary) !important;
+}
+
+.cat_culture {
+  background: #E0F2F1;
+  color: #00695C;
+}
+
+.cat_news {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.cat_opinion {
+  background: #FFEBEE;
+  color: #C62828;
+}
+
+
+.cat_features {
+  background: #FFF3E0;
+  color: #EF6C00;
 }

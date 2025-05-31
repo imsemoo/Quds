@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8" />
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Page Title -->
+  <title>Quds News – Independent Jerusalem News &amp; Analysis</title>
+
+  <!-- SEO: Meta Description -->
+  <meta name="description"
+    content="Quds News is an independent media platform delivering accurate, in-depth coverage and objective analysis of political, social, and cultural developments in Jerusalem." />
+
+  <!-- SEO: Meta Keywords -->
+  <meta name="keywords"
+    content="Jerusalem news, Quds News, Palestinian cause, Middle East news, Jerusalem politics, Jerusalem culture" />
+
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://qudsnews.com/" />
+
+  <!-- SEO: Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Author and Theme Color -->
+  <meta name="author" content="Quds News" />
+  <meta name="theme-color" content="#1565C0" />
+
+  <!-- Open Graph Tags for social sharing -->
+  <meta property="og:site_name" content="Quds News" />
+  <meta property="og:title" content="Quds News – Independent Jerusalem News &amp; Analysis" />
+  <meta property="og:description"
+    content="Discover reliable, unbiased news and deep insights on Jerusalem from Quds News—your premier source for understanding the Palestinian cause and city developments." />
+  <meta property="og:url" content="https://qudsnews.com/" />
+  <meta property="og:image" content="https://qudsnews.com/assets/img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@QudsNews" />
+  <meta name="twitter:title" content="Quds News – Independent Jerusalem News &amp; Analysis" />
+  <meta name="twitter:description"
+    content="Accurate, in-depth coverage and objective analysis of events and culture in Jerusalem—by Quds News." />
+  <meta name="twitter:image" content="https://qudsnews.com/assets/img/twitter-image.jpg" />
+
+  <!-- Preconnect to speed up resource loading -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="assets/css/style.css" as="style" />
+  <link rel="preload" href="assets/js/script.js" as="script" />
+
+  <!-- JSON-LD Structured Data for Organization & Website -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+          "@type": "Organization",
+          "name": "Quds News",
+          "url": "https://qudsnews.com/",
+          "logo": "https://qudsnews.com/assets/img/logo.png",
+          "sameAs": [
+            "https://twitter.com/QudsNews",
+            "https://www.facebook.com/QudsNews"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://qudsnews.com/",
+          "name": "Quds News",
+          "publisher": {
+            "@id": "https://qudsnews.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://qudsnews.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <!-- <div id="preloadr">
+    <div class="loader"></div>
+  </div> -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white s fixed-navbar">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.svg" alt="Quds News Logo" height="40" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Quds</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Opinion</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The Palestine Lexicon</a>
+          </li>
+        </ul>
+        <form class="d-flex ms-3">
+          <button type="submit" class="btn btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ====================== -->
+  <!-- Main Content -->
+  <!-- ====================== -->
+  <main class="articles-page">
+    <!-- ======== SECTION: Page Header ======== -->
+    <section class="articles-header text-center py-5">
+      <div class="container">
+        <h1 class="title">Articles</h1>
+        <p class="subtitle">
+          Explore Our Latest Articles, Opinions, and Features
+        </p>
+      </div>
+    </section>
+
+    <!-- ======== SECTION: Advanced Filter ======== -->
+    <section class="articles-filter py-4">
+      <div class="container">
+        <form class="filter-form">
+          <!-- Keyword Search -->
+          <div class="filter-group">
+            <label for="filter-keyword" class="filter-label">Search Keywords</label>
+            <input type="text" id="filter-keyword" class="form-control filter-input" placeholder="Enter keyword..." />
+          </div>
+
+          <!-- Category Select -->
+          <div class="filter-group">
+            <label for="filter-category" class="filter-label">Category</label>
+            <select id="filter-category" class="form-select filter-select">
+              <option value="" selected>All Categories</option>
+              <option value="news">News</option>
+              <option value="opinion">Opinion</option>
+              <option value="features">Features</option>
+              <option value="lexicon">The Palestine Lexicon</option>
+            </select>
+          </div>
+
+          <!-- Author Select -->
+          <div class="filter-group">
+            <label for="filter-author" class="filter-label">Author</label>
+            <select id="filter-author" class="form-select filter-select">
+              <option value="" selected>All Authors</option>
+              <option value="ahmed_mohammed">Ahmed Mohammed</option>
+              <option value="sarah_aziz">Sarah Aziz</option>
+              <option value="omar_khaled">Omar Khaled</option>
+              <option value="lina_habash">Lina Habash</option>
+            </select>
+          </div>
+
+          <!-- Date Range -->
+          <div class="filter-group">
+            <label for="filter-date-from" class="filter-label">Date From</label>
+            <input type="date" id="filter-date-from" class="form-control filter-input" />
+          </div>
+          <div class="filter-group">
+            <label for="filter-date-to" class="filter-label">Date To</label>
+            <input type="date" id="filter-date-to" class="form-control filter-input" />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="filter-group filter-group-submit">
+            <label for="f" class="filter-label" style="color: transparent">`</label>
+
+            <button type="submit" class="btn btn-primary btn-filter-submit">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======== SECTION: Articles List ======== -->
+    <section class="articles-list py-5">
+      <div class="container">
+        <div class="row g-lg-4">
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/2.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_news">News</span>
+                  <a class="author">Ahmed Amr</a>
+                  <a class="date">Sep 4, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Yale University Suspends Scholar After AI Article Accuses
+                </h5>
+                <p class="card-text">
+                  Yale University has suspended a prominent scholar following
+                  accusations of terrorism over a pro-Palestine AI article...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/5.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_opinion">Opinion</span>
+                  <a class="author">Sarah Aziz</a>
+                  <a class="date">Sep 3, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Analysis: The Geopolitical Implications of the Gaza Blockade
+                </h5>
+                <p class="card-text">
+                  An in-depth look at how regional powers are reacting to the
+                  recent blockade of Gaza and its international
+                  repercussions...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/1.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_features">Features</span>
+                  <a class="author">Omar Khaled</a>
+                  <a class="date">Sep 2, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Inside Stories: Living Under the Shadow of Conflict
+                </h5>
+                <p class="card-text">
+                  A personal account of families living in Jerusalem and Gaza
+                  amid continuous tension and how they cope daily...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/2.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_news">News</span>
+                  <a class="author">Ahmed Amr</a>
+                  <a class="date">Sep 4, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Yale University Suspends Scholar After AI Article Accuses
+                </h5>
+                <p class="card-text">
+                  Yale University has suspended a prominent scholar following
+                  accusations of terrorism over a pro-Palestine AI article...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/5.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_opinion">Opinion</span>
+                  <a class="author">Sarah Aziz</a>
+                  <a class="date">Sep 3, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Analysis: The Geopolitical Implications of the Gaza Blockade
+                </h5>
+                <p class="card-text">
+                  An in-depth look at how regional powers are reacting to the
+                  recent blockade of Gaza and its international
+                  repercussions...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <article class="card article-card h-100 shadow-sm border-0">
+              <img src="assets/img/articles/Square/1.jpg" class="card-img-top" alt="Article Image" />
+              <div class="card-body">
+                <div class="article-meta mb-2">
+                  <span class="badge cat_features">Features</span>
+                  <a class="author">Omar Khaled</a>
+                  <a class="date">Sep 2, 2022</a>
+                </div>
+                <h5 class="card-title">
+                  Inside Stories: Living Under the Shadow of Conflict
+                </h5>
+                <p class="card-text">
+                  A personal account of families living in Jerusalem and Gaza
+                  amid continuous tension and how they cope daily...
+                </p>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- Pagination Container -->
+        <nav class="pagination-container" aria-label="Page navigation example">
+          <ul class="pagination">
+            <!-- Previous Button -->
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
+            </li>
+
+            <!-- Page Numbers -->
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+
+            <!-- Next Button -->
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+          </ </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row text-white gy-4">
+        <!-- About Column -->
+        <div class="col-md-4">
+          <a href="#" class="d-inline-block mb-3">
+            <img src="assets/img/logo-white.svg" alt="Quds News Logo" height="40" />
+          </a>
+          <p class="footer-text">
+            We are an independent news platform specializing in covering
+            Jerusalem, with all its issues, concerns, and vibrant history.
+          </p>
+        </div>
+        <!-- Explore Column -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Explore</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Quds</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Contact Column -->
+        <div class="col-md-4">
+          <h5 class="footer-heading">Contact Us</h5>
+          <p class="footer-text">
+            Always stay up to date with our latest news.
+          </p>
+          <form class="d-flex mb-3" action="#" method="post">
+            <input type="email" class="form-control form-control-sm me-2" placeholder="Enter your email" />
+            <button type="submit" class="btn btn-sm btn-primary">
+              Send <i class="fas fa-paper-plane ms-1"></i>
+            </button>
+          </form>
+          <div class="social-icons">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="footer-bottom text-center text-white mt-4 pt-3 border-top">
+        <small>© 2025 Quds. Designed by Takteck Company. All rights
+          reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js" defer></script>
+</body>
+
+</html>
